@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>iPhone Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="colors.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>iPhone Calculator</h1>
+  <div class="container">
+    <div class="row">
+      <input type="text" id="textbox" class="text" placeholder="0">
+    </div>
+    <div class="row">
+      <button class="gray-color btn" onclick="clr()">AC</button>
+      <button class="gray-color btn" onclick="del()">DLE</button>
+      <button class="gray-color btn" onclick="calculate('%')">%</button>
+      <button class="yellow-color btn" onclick="calculate('/')">÷</button>
+    </div>
+    <div class="row">
+      <button class="dark-gray-color btn" onclick="calculate(7)">7</button>
+      <button class="dark-gray-color btn" onclick="calculate(8)">8</button>
+      <button class="dark-gray-color btn" onclick="calculate(9)">9</button>
+      <button class="yellow-color btn" onclick="calculate('*')">X</button>
+    </div>
+    <div class="row">
+      <button class="dark-gray-color btn" onclick="calculate(4)">4</button>
+      <button class="dark-gray-color btn" onclick="calculate(5)">5</button>
+      <button class="dark-gray-color btn" onclick="calculate(6)">6</button>
+      <button class="yellow-color btn" onclick="calculate('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="dark-gray-color btn" onclick="calculate(1)">1</button>
+      <button class="dark-gray-color btn" onclick="calculate(2)">2</button>
+      <button class="dark-gray-color btn" onclick="calculate(3)">3</button>
+      <button class="yellow-color btn" onclick="calculate('+')">+</button>
+    </div>
+    <div class="row">
+      <button class="zero dark-gray-color" onclick="calculate(0)">0</button>
+      <button class="dark-gray-color btn" onclick="calculate('.')">.</button>
+      <button class="yellow-color btn" onclick="equals()">=</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  <footer>
+    Created by <a href="https://github.com/habeebmoosa" target="_blank">Habeeb Moosa</a>
+  </footer>
+</body>
+
+</html>
